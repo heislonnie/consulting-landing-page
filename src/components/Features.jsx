@@ -1,39 +1,46 @@
+import React from "react";
+import consultancy from "../assets/consultancy.png";
 export default function Features() {
   return (
     <>
       {/* ===== STATS BAR ===== */}
-      <section id="features" className="bg-gradient-to-b from-[#0b1633] to-[#0a0f24] py-16 text-white">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+     {/* ===== STATS BAR ===== */}
+<section
+  id="features"
+  className="relative bg-gradient-to-b from-[#0b1633] to-[#0a0f24] py-16 pb-32 text-white"
+>
+  <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
 
-          {[1,2,3,4].map((_, i) => (
-            <div key={i} className="flex flex-col items-center">
-              <div className="w-14 h-14 bg-black/40 flex items-center justify-center mb-4">
-                👥
-              </div>
-              <h3 className="text-3xl font-bold">420</h3>
-              <p className="text-xs tracking-widest text-gray-300 mt-1">
-                CONSULTING SOLUTIONS
-              </p>
-            </div>
-          ))}
-
+    {[1,2,3,4].map((_, i) => (
+      <div key={i} className="flex flex-col items-center">
+        <div className="w-14 h-14 bg-black/40 flex items-center justify-center mb-4">
+          <img src={consultancy} alt="" />
         </div>
-      </section>
+        <h3 className="text-3xl font-bold">420</h3>
+        <p className="text-xs tracking-widest text-gray-300 mt-1">
+          CONSULTING SOLUTIONS
+        </p>
+      </div>
+    ))}
 
-      {/* ===== TABS BAR ===== */}
-      <section className="bg-white">
-        <div className="max-w-7xl mx-auto grid grid-cols-3 text-center shadow">
-          <div className="py-6 text-blue-500 font-semibold">
-            BUSINESS GROWTH
-          </div>
-          <div className="py-6 font-semibold bg-gray-50">
-            BUSINESS GROWTH
-          </div>
-          <div className="py-6 font-semibold bg-gray-100">
-            BUSINESS GROWTH
-          </div>
-        </div>
-      </section>
+  </div>
+
+  {/* ===== TABS BAR (OVERLAY) ===== */}
+  <div className="absolute left-1/2 -bottom-12 transform -translate-x-1/2 w-full px-6">
+    <div className="max-w-4xl mx-auto grid grid-cols-3 text-center shadow-lg bg-white rounded-md overflow-hidden">
+      <div className="py-6 text-blue-500 font-bold">
+        BUSINESS GROWTH
+      </div>
+      <div className="py-6 font-bold bg-gray-100 text-black">
+        BUSINESS GROWTH
+      </div>
+       <div className="py-6 font-bold bg-gray-100 text-black">
+        BUSINESS GROWTH
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* ===== FEATURES ===== */}
       <section className="bg-white py-20">

@@ -27,7 +27,7 @@ export default function MarketSection() {
           {/* Progress bars */}
           <div className="mt-8 space-y-4">
             <div>
-              <div className="flex justify-between text-xs mb-1">
+              <div className="flex justify-between font-bold text-xs mb-1">
                 <span>CONSULTING</span>
                 <span>88%</span>
               </div>
@@ -37,15 +37,17 @@ export default function MarketSection() {
             </div>
 
             <div>
-              <div className="flex justify-between text-xs mb-1">
+              <div className="flex justify-between text-xs font-bold mb-1">
                 <span>ADVICES</span>
                 <span>68%</span>
               </div>
               <div className="h-2 bg-gray-200 rounded">
                 <div className="h-2 bg-blue-500 rounded w-[68%]" />
               </div>
-            </div>
+            </div>  
           </div>
+
+       
 
           {/* Call */}
           <div className="mt-8 flex items-center gap-3 text-sm">

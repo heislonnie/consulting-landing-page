@@ -8,9 +8,10 @@ export default function MissionCTA() {
           MUCH MORE
         </h2>
 
-        <button className="mt-8 px-8 py-3 bg-blue-500 text-sm font-medium rounded">
-          DISCOVER MORE
-        </button>
+        <button className="bg-blue-500 mt-8 px-6 py-3 rounded text-sm font-medium inline-block">
+  DISCOVER MORE
+</button>
+  
       </div>
     </section>
   );
